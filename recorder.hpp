@@ -30,7 +30,7 @@ public:
   Recorder& operator = ( const Recorder& );
   
   /* IO friends */
-  friend DLL_EXPORT std::istream& operator >> (std::istream& is, const Recorder& a);
+  friend DLL_EXPORT std::istream& operator >> (std::istream& is, Recorder& a);
 	
   /* Operation + Assignment */
   inline Recorder& operator += ( double value ) { return operator+=(Recorder(value)); }

@@ -5,7 +5,9 @@ project(Recorder)
 
 add_library(recorder SHARED recorder.hpp recorder.cpp)
 add_executable(test test.cpp)
+add_executable(test_xml test_xml.cpp)
 target_link_libraries(test recorder)
+target_link_libraries(test_xml recorder)
 
 install(TARGETS test DESTINATION bin)
 file(GLOB HEADERS *.hpp)
